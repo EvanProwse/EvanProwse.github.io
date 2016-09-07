@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- more meta -->
     <meta name="Evan Prowse Personal Site" content="">
     <meta name="Evan Prowse" content="">
     <link rel="icon" href="favicon.ico">
@@ -32,77 +33,75 @@
   </head>
 
   <body>
-
-    <div class="container">
-      <div class="header clearfix">
-       
-        <nav>
-          <ul class="nav nav-pills pull-right">
-           <li role="presentation" class="active"><a href="#">About</a></li>
-            <li role="presentation"><a href="#work">Work</a></li>
-            <li role="presentation"><a href="#contact">Contact</a></li>
-            <li role="presentation"><a href="EPResume.pdf">CV</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Evan Prowse</h3>
+    <!-- Fixed navbar -->
+    <div id = "evan">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about">Evan Prowse</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#about">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="EPResume.pdf">CV</a></li>
+          </ul> 
+        </div>
       </div>
+    </nav>
+    </div>
+    <!-- End of navbar --> 
 
-      <div class="jumbotron">
-        <h1></h1>
-        <p class="lead">Website Coming Soon</p>
-      </div>
-
-      <!--About Me Section --> 
-      <div class="container" id = "about">
+ 	<!-- About Me Section --> 
+	<div class="container" id = "about">
         <h3>About</h3>
         <p class="lead">Evan Prowse is a digital marketer, passionate about creating and delivering valuable content in creative ways. 
-        He holds a BA in psychology and business from the University of Waterloo and is currently based in the Greater Toronto Area. 
-        In his spare time, Evan works on </p>
-      </div>
-      <!-- End of About --> 
+        He holds a BA in psychology and business from the University of Waterloo and is currently based out of the Greater Toronto Area. 
+        In his spare time, Evan works on a variety of projects ranging from musical production, research in psychology and small coding projects.</p>
+        <hr>
+    </div>
+    
+    <!-- End of About --> 
 
-      <!--Work Highlights section -->
+    <!--Work Highlights section -->
       <div class="container" id = "work">
         <h3>Work</h3>
-        <p class="lead"> Below is a select sample of recent projects I have been involved in. 
+        <p class="lead"> Below is a select sample of some of my recent projects. A complete résumé can be found <a href = "EPResume.pdf">here.</a>  </p>
+       
+        <h4> Music and Composition </h4>
 
+        <p> "Iced Coffee" is technical exercise in close up video production and food styling. 
+        I was asked to write and produce a short background track to accompany the  video which can be seen and heard below. 
 
+		<iframe src="https://player.vimeo.com/video/178404586" width="700" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+		</iframe>
+		
+		<p> My personal Soundcloud account houses various sound design ideas and sketeches. My debut EP will be released here soon. 
+		<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/30360300&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		
+        <h4> Academic </h4>
+        <p> Alongside my recent graduation from the University of Waterloo, I had the opportunity to carry out an original research project. The Following paper examines how employees react to witnessing abusive supervision in the workplace, their emotions and ultimately their responsive actions. </p>
 
-
-        
-
-
-          <iframe src="https://player.vimeo.com/video/178404586" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-
-          </p>
+        <object data="ThirdPartyJustice.pdf" type="application/pdf" width="100%" height= "100%" >
+  		</object>
+        <hr>    
       </div>
       <!--End of Work--> 
 
-
-
-
       <!--Contact Section--> 
-       <div class="row marketing">
-        <div class="container" id = "contact">
-          
-        </div>
-        <div class="col-lg-6">
-          <h3>Contact</h3>
-          <p class="lead">For any inquires please feel free to get in touch.</p>
-          <p><a href= "mailto:evanprowse@gmail.com">evanprowse@gmail.com</a></p>
-       
-
-          
-        </div>
+      <div class="container" id = "contact">
+        <h3>Contact</h3>
+        <p class="lead"> For any inquires please feel free to get in touch.</p>
+        <p><a href= "mailto:evanprowse@gmail.com">evanprowse@gmail.com</a></p>
+	 </div> 
   </div>
-
-
-
-
-
-
     <footer class="footer">
       <div class = "container">
 
@@ -111,10 +110,18 @@
       <a href="https://github.com/EvanProwse"><i class="fa fa-github-square" style="font-size:36px"></i></a>
 
       <a href="https://ca.linkedin.com/in/evanprowse"> <i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-
-    </div>
-    
- </footer>
+ 	</div>
+   </footer>
 </div> 
   </body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83823439-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
